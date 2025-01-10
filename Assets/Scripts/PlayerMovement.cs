@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour {
 	public CharacterController controller;
@@ -12,7 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	public Transform groundCheck;
 	public float groundDistance = 0.4f;
 	public LayerMask groundMask;
-
+	
 	Vector3 velocity;
 
 	bool isGrounded;
