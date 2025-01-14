@@ -47,7 +47,6 @@ public class Zipline : MonoBehaviour
         localZip.GetComponent<Collider>().isTrigger = true;
 
         player.GetComponent<Rigidbody>().useGravity = false;
-        player.GetComponent<Rigidbody>().isKinematic = true;
 
         player.GetComponent<PlayerMovement>().velocity = Vector3.zero;
         player.GetComponent<CharacterController>().enabled = false;
@@ -65,7 +64,6 @@ public class Zipline : MonoBehaviour
         
         GameObject player = localZip.transform.GetChild(0).gameObject;
         player.GetComponent<Rigidbody>().useGravity = true;
-        player.GetComponent<Rigidbody>().isKinematic = false;
         
         player.GetComponent<PlayerMovement>().velocity = Vector3.zero;
         player.GetComponent<CharacterController>().enabled = true;

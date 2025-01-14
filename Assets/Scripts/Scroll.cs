@@ -25,7 +25,7 @@ public class Scroll : MonoBehaviour {
 		return angle;
 	}
 	void Update() {
-		if (!start && Input.GetKey(KeyCode.Y) && Vector3.Distance(player.position,segment1.position) <= actvitationDistance) {
+		if (!start && Input.GetKey(KeyCode.E) && Vector3.Distance(player.position,segment1.position) <= actvitationDistance) {
 			start = true;
 		}
 		if (!start)
